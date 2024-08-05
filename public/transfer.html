@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transfer Money</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Basic Banking System</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/transfer">Transfer Money</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Transfer Money</h2>
+    <form id="transfer-form">
+      <input type="hidden" name="fromId" id="fromId">
+      <label for="toId">Transfer to:</label>
+      <select name="toId" id="toId" required></select>
+      <label for="amount">Amount:</label>
+      <input type="number" name="amount" id="amount" required>
+      <button type="submit">Transfer</button>
+    </form>
+  </main>
+  <script src="/scripts/script.js"></script>
+</body>
+</html>
